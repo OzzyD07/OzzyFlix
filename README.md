@@ -21,7 +21,7 @@ This project is developed using React Native and its dependencies. To set up the
 
 2. Navigate to the project directory:
    ```bash
-   cd repository-name
+   cd OzzyFlix
    ```
 
 3. Install dependencies:

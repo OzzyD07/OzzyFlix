@@ -15,36 +15,36 @@ This project is a mobile application developed using React Native. The app lists
 This project is developed using React Native and its dependencies. To set up the project locally, follow these steps:
 
 1. Clone this repository:
-   \`\`\`bash
+   ```bash
    git clone https://https://github.com/OzzyD07/OzzyFlix
-   \`\`\`
+   ```
 
 2. Navigate to the project directory:
-   \`\`\`bash
+   ```bash
    cd repository-name
-   \`\`\`
+   ```
 
 3. Install dependencies:
-   \`\`\`bash
+   ```bash
    npm install
    # or
    yarn install
-   \`\`\`
+   ```
 
 4. Start the project:
-   \`\`\`bash
+   ```bash
    npm start
    # or
    yarn start
-   \`\`\`
+   ```
 
 ## Configuration
 
 To use the TMDB API, you need an API key. After obtaining your API key, create a `/services/tmdb.tsx` file and add the following line:
 
-\`\`\`
+```
 API_KEY="your_api_key_here"
-\`\`\`
+```
 
 ## Usage
 

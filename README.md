@@ -33,9 +33,7 @@ This project is developed using React Native and its dependencies. To set up the
 
 4. Start the project:
    ```bash
-   npm start
-   # or
-   yarn start
+   npx expo start
    ```
 
 ## Configuration

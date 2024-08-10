@@ -1,6 +1,5 @@
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { Ionicons } from '@expo/vector-icons'
 
 export default function Header() {
     return (

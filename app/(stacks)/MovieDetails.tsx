@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import Ionicons from '@expo/vector-icons/Ionicons';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import { getMovieDetails, getTopCast, getSimilarMovies } from '@/services/tmdb';
+import FavScript from '@/scripts/FavScript';
 
 export default function MovieDetails() {
 
@@ -120,6 +121,9 @@ export default function MovieDetails() {
           <Ionicons name="arrow-back-outline" size={35} color="white" />
         </TouchableOpacity>
         <Header />
+        <View style={{ position: 'absolute', right: 15, top: 45 }}>
+          <FavScript movieId={movieId} />
+        </View>
       </View>
       {loading ? (<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }} >
         <ActivityIndicator size={'large'} color={'#ffa31a'} />
@@ -132,7 +136,7 @@ export default function MovieDetails() {
             <Text style={styles.infoPart} > | </Text>
             <Text style={styles.infos}>{movieData.runtime} min</Text>
             <Text style={styles.infoPart} > | </Text>
-            <Text style={styles.infos}>{movieData.vote_average} / 10</Text>
+            <Text style={styles.infos}>{Math.floor((movieData.vote_average * 10) % 10)} / 10</Text>
           </View>
           <Text style={styles.overview}>    {movieData.overview}</Text>
           <View>

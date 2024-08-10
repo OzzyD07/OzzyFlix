@@ -43,7 +43,7 @@ export default function SearchScreen() {
         }
         <View style={{ marginTop: 25, marginHorizontal: 10, width: 200 }}>
           <Text style={{ color: 'white', marginBottom: 10, fontSize: 20, fontWeight: '500' }}>{item.title}</Text>
-          <Text style={{ color: '#9e9e9e', marginBottom: 10 }}> {Math.floor((item.vote_average * 10) % 10)}/ 10 · {item.release_date} </Text>
+          <Text style={{ color: '#9e9e9e', marginBottom: 10 }}> {Math.floor((item.vote_average * 10) % 10)} / 10 · {item.release_date} </Text>
           <Text numberOfLines={3} ellipsizeMode='tail' style={{ color: 'white', flexWrap: 'wrap', flexShrink: 1 }} > {item.overview} </Text>
         </View>
       </TouchableOpacity>

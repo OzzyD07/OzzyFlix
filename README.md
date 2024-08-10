@@ -1,45 +1,55 @@
-# UNCOMPLETED PROJECT
+# Movie and Actor Listing App
 
-## Welcome to your Expo app 👋
+This project is a mobile application developed using React Native. The app lists movies and actors using the TMDB (The Movie Database) API.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Features
 
-## Get started
+- List movies
+- List actors
+- Detailed information about movies
+- Detailed information about actors
+- User-friendly interface
 
-1. Install dependencies
+## Installation
 
-   ```bash
+This project is developed using React Native and its dependencies. To set up the project locally, follow these steps:
+
+1. Clone this repository:
+   \`\`\`bash
+   git clone https://https://github.com/OzzyD07/OzzyFlix
+   \`\`\`
+
+2. Navigate to the project directory:
+   \`\`\`bash
+   cd repository-name
+   \`\`\`
+
+3. Install dependencies:
+   \`\`\`bash
    npm install
-   ```
+   # or
+   yarn install
+   \`\`\`
 
-2. Start the app
+4. Start the project:
+   \`\`\`bash
+   npm start
+   # or
+   yarn start
+   \`\`\`
 
-   ```bash
-    npx expo start
-   ```
+## Configuration
 
-In the output, you'll find options to open the app in a
+To use the TMDB API, you need an API key. After obtaining your API key, create a `/services/tmdb.tsx` file and add the following line:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+\`\`\`
+API_KEY="your_api_key_here"
+\`\`\`
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Usage
 
-## Get a fresh project
+After starting the application, you can access the list of movies from the main screen. To get more information about a movie, tap on the relevant movie card.
 
-When you're ready, run:
+## Contributing
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+If you would like to contribute, please submit a pull request. For discussions or suggestions, please use the [Issues](https://github.com/OzzyD07/OzzyFlix/issues) section.
